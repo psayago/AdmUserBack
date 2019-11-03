@@ -10,22 +10,20 @@ import javax.persistence.Table;
 @Table(name="users")
 public class User {
 	
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id;
+	private int id;
 	private String name;
 	private String surname;
 	private String email;
 	private String username;
 	private String password;
 	
-	
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public User(Integer id, String name, String surname, String email, String username, String password) {
+	public User(int id, String name, String surname, String email, String username, String password) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -34,10 +32,10 @@ public class User {
 		this.username = username;
 		this.password = password;
 	}
-	public Integer getId() {
+	public int getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 	public String getName() {
@@ -70,7 +68,6 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
 	
 	
 
