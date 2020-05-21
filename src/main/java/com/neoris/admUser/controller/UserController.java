@@ -17,7 +17,7 @@ public class UserController {
 	@Autowired
 	private UserRepository userRepository;
 
-	@RequestMapping(value = "api/authenticate/register", method = RequestMethod.POST)
+	@RequestMapping(value = "google/authenticate/register", method = RequestMethod.POST)
 	public ResponseEntity<User> registerUser(@RequestBody User user) {
 
 		try {
@@ -30,7 +30,7 @@ public class UserController {
 
 	}
 
-	@RequestMapping(value = "api/authenticate/login", method = RequestMethod.POST)
+	@RequestMapping(value = "google/authenticate/login", method = RequestMethod.POST)
 	//@CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
 	public ResponseEntity<User> saveUser(@RequestBody User user) {
 //		HttpHeaders responseHeaders = new HttpHeaders();
